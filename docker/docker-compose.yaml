@@ -1,0 +1,12 @@
+version: '3.8'
+name: 'pelvi-active'
+services:
+  angular:
+    tty: true
+    build:
+      context: ./angular
+    volumes:
+      - ../ui:/ui
+    ports:
+      - "4200:4200"
+
