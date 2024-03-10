@@ -1,0 +1,13 @@
+<div class="flex py-4 text-white">
+  <div class="mr-auto">
+    <app-menubar-toggler (toggleClick)="handleToggleClick($event)" />
+  </div>
+
+  @if (opened()) {
+    <app-menubar-items />
+  }
+
+  <div class="ml-auto">
+    <app-menubar-contact-icon />
+  </div>
+</div>

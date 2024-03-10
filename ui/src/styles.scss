@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./styles/colors";
+@use "./styles/fonts/roboto";
+@use "./styles/icons/bootstrap";
+
+:root {
+  --app-primary: #{colors.$primary};
+  --app-secondary: #{colors.$secondary};
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
